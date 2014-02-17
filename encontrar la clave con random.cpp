@@ -1,27 +1,14 @@
 #include<stdlib.h>
 #include<stdio.h>
 int buscar(int num[],int clave,int n);
-void Burbuja(int num[],int n)
-{
-	int i,j,temp;
-	
-	for (j=1;j<7;j++){
-		for(i=0;i<7;i++){
-			if (num[i]>num[i+1]){
-				temp=num[i];
-				num[i]=num[i+1];
-				num[i+1]=temp;
-			}
-		}
-	}
-}
+
 int main (){
 	int num[500],n,i,clave,x;
 	printf("Introduce el numero de elementos\n");
 	scanf("%d",& n);
 	for (i=0;i<n;i++)
 	   num[i]=rand()%10;
-	Burbuja(num,7);
+	
 for (i=0;i<n;i++)
 	printf("El valor de num es: %d\n",num[i]);
 
